@@ -49,3 +49,11 @@ li a:hover {
   margin: 0;
   margin-bottom: 31px;
 }
+
+nav ul>li ul {
+  display: none;
+}
+
+nav>ul>li:hover>.dropdown{
+  display: block;
+}
