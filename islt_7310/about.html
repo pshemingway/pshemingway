@@ -12,7 +12,7 @@ School/Term:  University of Missouri, Fall 2022
 
 Developed: Sep 1, 2022
 
-Tested:  Sep 1, 2022; Passed on Firefox and Chrome browsers.
+Tested:  Sep 18, 2022; Passed on Firefox and Chrome browsers.
 
 ******************************************************************************
 
@@ -26,10 +26,35 @@ Tested:  Sep 1, 2022; Passed on Firefox and Chrome browsers.
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="nav.css" type="text/css">
     <title>About Me</title>
   </head>
   <body>
-    <nav></nav>
+    <nav>
+      <ul class="list-links">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="project.html">Projects</a>
+          <ul class="dropdown">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="reflection.html">Reflection</a>
+        </li>
+        <li>
+          <a href="#contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
     <header>
       <h1>About Me</h1>
     </header>
