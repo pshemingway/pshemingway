@@ -1,22 +1,45 @@
+:root {
+  --hot-pink: #F72585;
+  --purple: #7209B7;
+  --indigo: #3A0CA3;
+  --blue: #4361EE;
+  --sky-blue: #4CC9F0;
+  --dark-grey: #171717;
+}
+
 h1, h2 {
-  color: #2f8fb3;
+  color: var(--sky-blue);
+}
+
+body {
+  background-image: linear-gradient(var(--dark-grey), black);
+  min-height: 100vh;
+  color: white;
+  position: relative;
+  padding-bottom: 60px;
 }
 
 header {
-  padding: 30px 30px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px 60px;
 }
 
 main {
-  padding: 30px;
+  max-width: 1000px;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0 50px;
 }
 
 footer {
   position: absolute;
   bottom: 0;
-  background-color: #2f8fb3;
-  color: white;
+  background-color: var(--sky-blue);
+  color: black;
   width: 100%;
-  padding: 20px;
+  height: 60px;
+  padding: 10px;
 }
 
 .first-p::first-letter {
@@ -24,6 +47,101 @@ footer {
   font-weight: bolder;
 }
 
+.row {
+  display: flex;
+}
+
+.main-row {
+  flex-direction: row-reverse;
+}
+
+
+#about-main .main-row img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  float: right;
+  border-radius: 5px;
+  border: 5px solid var(--hot-pink);
+  box-shadow: 0 0 30px var(--hot-pink);
+}
+
+#about-main .row p {
+  line-height: 200%;
+}
+
+#about-main .main-row > div {
+  flex: 50%;
+}
+
+#about-main .row {
+  margin-bottom: 60px;
+}
+
+.video {
+  flex: 70%;
+  text-align: right;
+}
+.resume {
+  flex: 30%;
+}
+
+#about-main > div{
+  padding: 10px;
+}
+
+.resume-img {
+  width: 91.5%;
+  aspect-ratio: 8/10;
+}
+.resume a {
+  text-decoration: none;
+}
+.resume-btn {
+  padding: 10px 50px;
+  background-color: var(--blue);
+  color: white;
+  display: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+
+iframe {
+  aspect-ratio: 16/9;
+  width: 90%;
+}
+
 #reflection-article p {
   text-indent: 45px;
+}
+
+@media screen and (max-width: 850px){
+  .row {
+    display: block;
+  }
+  #about-main .main-row img {
+    float: unset;
+    margin-bottom: 50px;
+  }
+  .resume-img {
+    display: none;
+  }
+  .resume {
+    text-align: center;
+  }
+  .resume-btn {
+    display: inline;
+    margin-bottom: 50px;
+  }
+
+  .video {
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 425px){
+  
 }
