@@ -19,16 +19,20 @@ Tested:  Sep 18, 2022; Passed on Firefox and Chrome browsers.
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="nav.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <title>Home</title>
   </head>
   <body>
     <nav>
+      <a href="index.html" class="name-link">Paul Hemingway</a>
       <ul class="list-links">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
         <li>
           <a href="about.html">About</a>
         </li>
@@ -48,17 +52,26 @@ Tested:  Sep 18, 2022; Passed on Firefox and Chrome browsers.
         </li>
       </ul>
     </nav>
-
-    <header>
-      <h1>Hi, I'm Paul</h1>
-    </header>
-
-    <main>
-      <h2>Welcome to my web portfolio!</h2>
-      <p>
-        The purpose of the website is to get you to know me a little better! I’d like to share everything about me, including general information, education history, projects, my personal reflection, contact information, and fun facts about me! I hope that I can showcase all my relevant professional experiences and projects to prove my qualifications as a software developer. For companies or recruiters: I hope to provide a way for you to view my qualifications and easily reach out to me if you are interested in adding me to your team. My goal is to convey information about myself in the best way possible so that everyone viewing this website can learn all about me. Lastly, I want all visitors to enjoy the look and feel of this web portfolio, by using the right colors and fonts and providing a smooth user experience.
-      </p>
-    </main>
+    <div id="home">
+      <div class="top-section">
+        <header>
+          <h1>Hi, I'm Paul.</h1>
+        </header>
+    
+        <div class="main-img">
+          <img src="images/PaulHemingway.JPG" alt="Paul Hemingway">
+        </div>
+      </div>
+      
+  
+      <main>
+        <h2>Welcome To My Web Portfolio</h2>
+        <p>
+          The purpose of this website is to get you to know me a little better! I’d like to share everything about me, including general information, education history, projects, my personal reflection, contact information, and fun facts about me! I hope that I can showcase all my relevant professional experiences and projects to prove my qualifications as a software developer. For companies or recruiters: I hope to provide a way for you to view my qualifications and easily reach out to me if you are interested in adding me to your team. My goal is to convey information about myself in the best way possible so that everyone viewing this website can learn all about me. Lastly, I want all visitors to enjoy the look and feel of this web portfolio, by using the right colors and fonts and providing a smooth user experience.
+        </p>
+      </main>
+    </div>
+    
 
     <footer>
       <p>Paul Hemingway | pshfmg@umsystem.edu</p>

@@ -7,6 +7,18 @@
   --dark-grey: #171717;
 }
 
+
+
+* {
+  font-family: 'Inter';
+
+}
+
+header *, main * {
+  max-width: 1000px;
+  
+}
+
 h1, h2 {
   color: var(--sky-blue);
 }
@@ -19,14 +31,18 @@ body {
   padding-bottom: 60px;
 }
 
-header {
-  max-width: 1000px;
+header{
+  margin: 25px auto;
+  text-align: center;
+
+}
+
+header * {
   margin: 0 auto;
-  padding: 10px 60px;
 }
 
 main {
-  max-width: 1000px;
+  
   width: 100vw;
   margin: 0 auto;
   padding: 0 50px;
@@ -63,9 +79,13 @@ footer {
   margin: 0 auto;
   float: right;
   border-radius: 5px;
+  
+}
+
+#about-main img, #home img {
   border: 5px solid var(--hot-pink);
   box-shadow: 0 0 30px var(--hot-pink);
-}
+} 
 
 #about-main .row p {
   line-height: 200%;
@@ -117,6 +137,77 @@ iframe {
   text-indent: 45px;
 }
 
+#home main h2 {
+  margin-bottom: 20px;
+}
+
+#home main p {
+  text-indent: 45px;
+}
+
+#home .top-section{
+  margin: 25px 0;
+  display: flex;
+  padding: 0 50px;
+  max-width: 1000px;
+}
+
+#home .top-section > * {
+  flex: 50%;
+}
+
+#home img {
+  width: 35vw;
+  border-radius: 50%;
+  max-width: 400px;
+}
+#home .main-img {
+  text-align: right;
+}
+#home header {
+  display: flex;
+  align-items: center;
+  font-size: 2.4vw;
+}
+
+#projects .project {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  margin: 0 2%;
+}
+
+#projects .project > * {
+  flex: 50%;
+}
+
+#projects {
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+#projects .project .image {
+  background-color: blue;
+  aspect-ratio: 1/1;
+  max-width: 300px;
+  display: flex;
+  margin: 0 auto;
+}
+
+
+#projects .project .desc {
+  background-color: green;
+  aspect-ratio: 1/1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+
 @media screen and (max-width: 850px){
   .row {
     display: block;
@@ -140,8 +231,45 @@ iframe {
     text-align: center;
   }
 
+  #home main p {
+    font-size: 15px;
+  }
+
+  #home main h2 {
+    font-size: 18px;
+  }
+
+  nav a {
+    font-size: 2.2vw;
+  }
+
+  #projects{
+    flex-direction: column;
+  }
+  #projects .project {
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 425px){
-  
+  #home .top-section {
+    display: block;
+  }
+  #home header {
+    width: 100%;
+    font-size: 4vw;
+    justify-content: center;
+  }
+  #home .main-img {
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  main {
+    padding: 0 25px;
+  }
+  #home main p {
+    font-size: 13px;
+  }
 }
