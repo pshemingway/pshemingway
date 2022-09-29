@@ -87,6 +87,11 @@ footer {
   
 }
 
+#about-main .ed-info {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
 #about-main img, #home img {
   border: 5px solid var(--hot-pink);
   box-shadow: 0 0 30px var(--hot-pink);
