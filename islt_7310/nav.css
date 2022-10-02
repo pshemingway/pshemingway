@@ -29,6 +29,7 @@ nav li {
 
 nav a {
   padding: 25px 20px;
+  text-transform: uppercase;
   color: white;
   text-decoration: none;
   transition: all 0.2s ease;

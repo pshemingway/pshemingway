@@ -40,9 +40,9 @@ Tested:  Sep 18, 2022; Passed on Firefox and Chrome browsers.
         <li>
           <a href="project.html">Projects</a>
           <ul class="dropdown">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
+            <li><a href="project.html#tigerhacks">TigerHacks</a></li>
+            <li><a href="project.html#quizit">Quiz-It</a></li>
+            <li><a href="project.html#snipcode">snipCode</a></li>
           </ul>
         </li>
         <li>
@@ -60,34 +60,46 @@ Tested:  Sep 18, 2022; Passed on Firefox and Chrome browsers.
 
     <main>
       <div id="projects">
-        <div class="project">
+        <div class="project" id="tigerhacks">
           <div class="first">
-            <div class="title">Project Title</div>
-            <div class="image">Project Image</div>
+            <div class="title">TigerHacks</div>
+            <div class="image">
+              <img src="images/tigerhacks.png" alt="TigerHacks">
+            </div>
           </div>
           <div class="second">
-            <div class="desc">Project desc.</div>
-            <div class="link">Project links</div>
+            <div class="desc">The TigerHacks website is an interactive web application that presents information about Mizzou's Hackathon that occurs in November. As you scroll through the page, you traverse through information about the event in an airplane, train, and submarine. This web application was made using HTML, CSS, JavaScript, jQuery, and Firebase. The JavaScript code is used to detect scrolling, along with the scroll position, to react accordingly, such as shifting all elements to the left or right to simulate movement, or loading in elements at certain positions.</div>
+            <div class="link">
+              <a href="https://tigerhacks.com/2022" target="_blank">View</a>
+            </div>
           </div>
         </div>
-        <div class="project">
+        <div class="project" id="quizit">
           <div class="first">
-            <div class="title">Project Title</div>
-            <div class="image">Project Image</div>
+            <div class="title">Quiz-It</div>
+            <div class="image">
+              <img src="images/quizit.png" alt="quiz-it">
+            </div>
           </div>
           <div class="second">
-            <div class="desc">Project desc.</div>
-            <div class="link">Project links</div>
+            <div class="desc">Quiz-it is a desktop application that allows users to either take or create multiple-choice quizzes, depending on whether they have a teacher account or student account. With teacher accounts, users can create quizzes for their class by providing any number of questions, along with answer choices. They can also view the scores of all students that took quizzes they created. With student accounts, users can search for and take quizzes that are created by the teachers. They can view the scores of quizzes they took. This application stores its data via MySQL, which is hosted on an Amazon EC2 instance.</div>
+            <div class="link">
+              <a href="https://github.com/paulhemingway/Java-OOP-FinalProject" target="_blank">Repo</a>
+            </div>
           </div>
         </div>
-        <div class="project">
+        <div class="project" id="snipcode">
           <div class="first">
-            <div class="title">Project Title</div>
-            <div class="image">Project Image</div>
+            <div class="title">snipCode</div>
+            <div class="image">
+              <img src="images/snipcode.png" alt="snipCode">
+            </div>
           </div>
           <div class="second">
-            <div class="desc">Project desc.</div>
-            <div class="link">Project links</div>
+            <div class="desc">snipCode is a web application that provides a community for programmers to share snippets of language-flexible, syntax-highlighted code. Users are allowed to specify which coding language they are posting a snippet of, and the application will syntax-highlight it accordingly. After a snippet is posted, other users can view it on the public feed. Technologies of this application include Angular, prism.js, Java, and MySQL. Angular is used for the UI, prism.js is used for syntax highlighting, Java is used to host the RESTful API, and MySQL stores all the data.</div>
+            <div class="link">
+              <a href="https://github.com/CS-IT-4830-F21/hack-week-project-jonathan-paul-and-noah" target="_blank">Repo</a>
+            </div>
           </div>
         </div>
       </div>
