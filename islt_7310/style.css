@@ -278,6 +278,26 @@ iframe {
   display: none;
 } 
 
+th, td, tr {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+
+th, td {
+  padding: 10px;
+}
+
+tbody tr:nth-child(2n-1){
+  background-image: linear-gradient(var(--indigo), var(--purple))
+}
+caption {
+  font-size: 2rem;
+  text-align: left;
+  color: var(--sky-blue);
+  font-weight: 600;
+}
+
 
 @media screen and (max-width: 850px){
   main, header {
@@ -326,6 +346,12 @@ iframe {
   #projects .project .desc {
     min-height: unset;
   }
+  table {
+    font-size: 2vw;
+  }
+  th, td {
+    padding: 5px;
+  }
 }
 
 @media screen and (max-width: 425px){
@@ -347,6 +373,9 @@ iframe {
   }
   #home main p {
     font-size: 13px;
+  }
+  table {
+    font-size: 11px;
   }
 }
 

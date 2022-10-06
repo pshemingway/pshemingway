@@ -43,7 +43,7 @@ nav a {
   align-items: center;
 }
 
-nav li a:hover {
+nav a:hover {
   background-color: rgba(255,255,255,0.07)
 }
 
@@ -65,4 +65,10 @@ nav ul>li ul {
 
 nav>ul>li:hover>.dropdown{
   display: block;
+}
+
+@media screen and (max-width: 430px){
+  nav a {
+    padding: 15px 10px;
+  }
 }
