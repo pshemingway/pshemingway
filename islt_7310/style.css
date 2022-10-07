@@ -298,6 +298,59 @@ caption {
   font-weight: 600;
 }
 
+#contact label {
+  display: block;
+}
+
+#contact form {
+  border: 1px solid white;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  padding: 30px;
+  background-image: linear-gradient(var(--purple), var(--indigo));
+  border-radius: 20px;
+  box-shadow: 6px 6px 0px white;
+}
+
+#contact form > div {
+  margin-bottom: 20px;
+
+}
+
+form .name-row {
+  display: flex;
+  gap: 4%;
+}
+
+form .name-row > div {
+  flex: 48%;
+}
+
+#contact input[type=text], 
+  #contact input[type=email], 
+  #contact textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+#contact input[type=submit] {
+  background-color: var(--hot-pink);
+  color: white;
+  font-weight: 600;
+  padding: 7px 40px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+#contact input[type=submit]:hover{
+  transform: scale(1.05);
+  background-color: #c51c68;
+}
+
+.submitDiv {
+  text-align: center;
+}
+
 
 @media screen and (max-width: 850px){
   main, header {
@@ -351,6 +404,13 @@ caption {
   }
   th, td {
     padding: 5px;
+  }
+  #contact .name-row {
+    display: block;
+  }
+
+  #firstName {
+    margin-bottom: 20px;
   }
 }
 

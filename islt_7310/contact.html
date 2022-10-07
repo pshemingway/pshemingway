@@ -3,15 +3,15 @@
 
 Title:  Home Page
 
-Use:  To welcome users to my web portfolio.
+Use:  To let users contact me
 
 Author:  Paul Hemingway
 
 School/Term:  University of Missouri, Fall 2022
 
-Developed: Sep 3, 2022
+Developed: Oct 6, 2022
 
-Tested:  Sep 18, 2022; Passed on Firefox and Chrome browsers.
+Tested:  Oct 6, 2022; Passed on Firefox and Chrome browsers.
 
 ******************************************************************************
 -->
@@ -28,7 +28,7 @@ Tested:  Sep 18, 2022; Passed on Firefox and Chrome browsers.
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Home</title>
+    <title>Contact</title>
   </head>
   <body>
     <nav>
@@ -48,23 +48,39 @@ Tested:  Sep 18, 2022; Passed on Firefox and Chrome browsers.
         </li>
       </ul>
     </nav>
-    <div id="home">
-      <div class="top-section">
+    <div id="contact">
         <header>
-          <h1>Hi, I'm Paul.</h1>
+          <h1>Contact Me</h1>
         </header>
-    
-        <div class="main-img">
-          <img src="images/PaulHemingway.JPG" alt="Paul Hemingway">
-        </div>
-      </div>
       
   
       <main>
-        <h2>Welcome To My Web Portfolio</h2>
-        <p>
-          The purpose of this website is to get you to know me a little better! I’d like to share everything about me, including general information, education history, projects, my personal reflection, contact information, and fun facts about me! I hope that I can showcase all my relevant professional experiences and projects to prove my qualifications as a software developer. For companies or recruiters: I hope to provide a way for you to view my qualifications and easily reach out to me if you are interested in adding me to your team. My goal is to convey information about myself in the best way possible so that everyone viewing this website can learn all about me. Lastly, I want all visitors to enjoy the look and feel of this web portfolio, by using the right colors and fonts and providing a smooth user experience.
-        </p>
+        <form action="mailto:pshfmg@umsystem.edu?Subject=Portfolio%20Website%20Contact" method="post" enctype="text/plain">
+          <div class="name-row">
+            <div>
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" placeholder="Peter" required autofocus>
+            </div>
+            <div>
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" placeholder="Parker" required>
+            </div>
+          </div>
+          <div>
+            <label for="emailInput">Email</label>
+            <input type="email" placeholder="example123@gmail.com" id="emailInput" required>
+          </div>
+          <div>
+            <label for="messageInput">Message</label>
+            <textarea name="messageInput" id="messageInput" cols="30" rows="10" required></textarea>
+          </div>
+          <div class="submitDiv">
+            <input type="submit">
+          </div>
+          
+
+
+        </form>
       </main>
     </div>
     
